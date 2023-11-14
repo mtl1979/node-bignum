@@ -118,12 +118,24 @@ BigNum.prototype.powm = function (num, mod) {
   }
 
   if ((typeof num) === 'number') {
-    return this.upowm(num, m)
+    if (mod !== undefined) {
+      return this.upowm(num, m)
+    } else {
+      return this.upow(num)
+    }
   } else if ((typeof num) === 'string') {
     var n = BigNum(num)
-    return this.bpowm(n, m)
+    if (mod !== undefined) {
+      return this.bpowm(n, m)
+    } else {
+      return this.pow(n)
+    }
   } else if (BigNum.isBigNum(num)) {
-    return this.bpowm(num, m)
+    if (mod !== undefined) {
+      return this.bpowm(num, m)
+    } else {
+      return this.pow(num)
+    }
   }
 }
 

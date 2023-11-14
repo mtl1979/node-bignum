@@ -1,11 +1,14 @@
 {
-  "name": "bignum",
-  "version": "0.13.1",
+  "name": "@mtl1979/bignum",
+  "version": "0.13.2",
   "description": "Arbitrary-precision integer arithmetic using OpenSSL",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/justmoon/node-bignum.git"
+    "url": "http://github.com/mtl1979/node-bignum.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "openssl",
@@ -33,11 +36,12 @@
   },
   "scripts": {
     "install": "node-gyp rebuild",
-    "test": "standard && tap --timeout 120 test/*.js"
+    "test": "standard && tap --timeout 120 --reporter classic test/*.js"
   },
   "license": "MIT",
   "contributors": [
     "James Halliday <mail@substack.net>",
-    "Rod Vagg <rod@vagg.org>"
+    "Rod Vagg <rod@vagg.org>",
+    "Mika T. Lindqvist <postmaster@raasu.org>"
   ]
 }

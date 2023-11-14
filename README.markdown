@@ -1,7 +1,7 @@
 bignum
 ======
 
-[![Build Status](https://github.com/justmoon/node-bignum/workflows/CI/badge.svg)](https://github.com/justmoon/node-bignum/actions?workflow=CI)
+[![Build Status](https://github.com/mtl1979/node-bignum/workflows/CI/badge.svg)](https://github.com/mtl1979/node-bignum/actions?workflow=CI)
 
 Arbitrary precision integral arithmetic for Node.js using
 OpenSSL.
@@ -38,7 +38,7 @@ simple.js
 ---------
 
 ```js
-var bignum = require('bignum');
+var bignum = require('@mtl1979/bignum');
 
 var b = bignum('782910138827292261791972728324982')
     .sub('182373273283402171237474774728373')
@@ -334,14 +334,14 @@ modules.
 
 You can install node-bignum with [npm](http://npmjs.org):
 
-    npm install bignum
+    npm install @mtl1979/bignum
 
 develop
 =======
 
 You can clone the git repo and compile with
 
-    git clone git://github.com/justmoon/node-bignum.git
+    git clone git://github.com/mtl1979/node-bignum.git
     cd node-bignum
     npm install
 
